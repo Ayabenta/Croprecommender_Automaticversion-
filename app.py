@@ -18,7 +18,7 @@ database = firebase.database()
 model = pickle.load(open('croprecommenderv1.pkl', 'rb'))
 #Create App
 app = Flask(__name__)
-@app.route('/', methods = ['POST'])
+@app.route('/', methods = ['GET'])
 #app.route("/") this tells flask what url should trigger our function in my 
 # case / means my localhost 
 def predict():
