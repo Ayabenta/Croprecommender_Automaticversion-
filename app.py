@@ -15,7 +15,7 @@ auth = firebase.auth()
 database = firebase.database()
 
 #load model 
-model = pickle.load(open('croprecommenderv1.pkl', 'rb'))
+model = pickle.load(open('recommendation_plantes.pkl', 'rb'))
 #Create App
 app = Flask(__name__)
 @app.route('/', methods = ['GET'])
