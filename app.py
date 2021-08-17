@@ -32,8 +32,8 @@ def predict():
     data.update((x,[y]) for x,y in data.items())
     data_df = pd.DataFrame.from_dict(data)
     result = model.predict(data_df)
-    output = {'results': result[0]}
-    return jsonify(results=output)
+    output = result[0] 
+    return jsonify(output)
 if __name__ == '__main__':
     app.run(debug=True)
 
